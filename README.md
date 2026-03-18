@@ -1,5 +1,7 @@
 # RAG Chatbot — Databases for GenAI Lecture
 
+**GitHub Repository:** https://github.com/supergodciklum/rag-chatbot-ai-academy.git
+
 A complete Retrieval-Augmented Generation (RAG) pipeline that ingests a PDF
 and audio recordings from the "Databases for GenAI" lecture and lets you chat
 with the content.
@@ -61,11 +63,12 @@ AZURE_LLM_DEPLOYMENT=gpt-4o-mini
 ```
 rag_chatbot/
 ├── data/
-│   ├── databases_for_genai.pdf     ← Place the lecture PDF here
-│   └── audio/
-│       ├── lecture_part1.mp3       ← Place audio files here
-│       └── lecture_part2.mp3
+│   ├── RAG Intro.pdf               ← Place the lecture PDF here
+│   └── RAG Intro.mp4               ← Place the video/audio file here
 ```
+
+> **Note:** The `data/` folder is intentionally **not included** in this repository because video files are too large to push to GitHub.
+> You must add the source files manually before running the pipeline.
 
 ## Usage
 
