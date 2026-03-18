@@ -1,0 +1,28 @@
+# ── Core RAG dependencies ──────────────────────────────────────────────────
+
+# PDF extraction
+PyMuPDF>=1.24.0           # fitz — fast, reliable PDF text extraction
+
+# Audio transcription
+openai-whisper>=20231117  # Whisper speech-to-text (downloads model weights on first run)
+
+# Text chunking
+langchain-text-splitters>=0.2.0
+
+# Vector database
+chromadb>=0.5.0
+
+# Azure OpenAI SDK (embeddings + chat completions)
+# The standard 'openai' package supports Azure via AzureOpenAI client
+openai>=1.30.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+numpy>=1.24.0
+tqdm>=4.66.0
+python-dotenv>=1.0.0      # optional: load env vars from a .env file
+
+# ── Audio format support ──────────────────────────────────────────────────
+# ffmpeg must be installed on your SYSTEM (not via pip):
+#   macOS:   brew install ffmpeg
+#   Ubuntu:  sudo apt install ffmpeg
+#   Windows: https://ffmpeg.org/download.html
