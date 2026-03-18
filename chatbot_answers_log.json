@@ -1,0 +1,95 @@
+[
+  {
+    "question": "What are the production Do's for RAG?",
+    "answer": "The production Do’s for RAG are (PDF, p.14):\n\n- **Start simple, iterate based on metrics**  \n- **Use metadata filtering** (e.g., by product, language, permissions)  \n- **Combine vector + keyword search** (hybrid retrieval)  \n- **Monitor retrieval quality** (e.g., recall@k, precision)  \n- **Keep embeddings synchronized with documents**  \n- **Evaluate with domain‑specific questions**",
+    "top_sources": [
+      {
+        "source": "PDF",
+        "distance": 0.4275,
+        "snippet": "--- Page 6 ---\n6\nWhy RAG Matters?\n●\nFresh Additional Knowledge. RAG lets \nyou ground answers in recent \ndocuments, internal wikis, or databases \nwithout retraining models.\n●\nBetter Accuracy. By retrie"
+      },
+      {
+        "source": "PDF",
+        "distance": 0.4676,
+        "snippet": "--- Page 3 ---\n3\nAgenda\n01\n02\n03\nDeﬁnition & Beneﬁts\nUse cases\nLimitations\n\n--- Page 4 ---\n4\nThe AI Adaptation Landscape\nWhere Does RAG Fit in Your AI Strategy?\n●\nNeed fresh, proprietary knowledge\n●\nD"
+      },
+      {
+        "source": "PDF",
+        "distance": 0.4833,
+        "snippet": "--- Page 14 ---\n14\nDon’ts\n🆇\nRely solely on vector search\n🆇\nIgnore security and access controls\n🆇\nOverload the LLM context window\n🆇\nNeglect continuous updates\n🆇\nSkip evaluation frameworks\nDo’s\n✅\nStart "
+      },
+      {
+        "source": "PDF",
+        "distance": 0.503,
+        "snippet": "--- Page 12 ---\n12\n12\nRAG real world use cases\n●\nAI Chatbots: RAG provides accurate answers from internal \nknowledge bases (e.g., support wikis, legal documents).  OpenAI \nemphasises that RAG is valua"
+      },
+      {
+        "source": "AudioTranscript",
+        "distance": 0.5243,
+        "snippet": "--- Transcript: 1 part. RAG Intro.mp4 ---"
+      }
+    ]
+  },
+  {
+    "question": "What is the difference between standard retrieval and the ColPali approach?",
+    "answer": "The provided context doesn’t describe “standard retrieval” vs. the “ColPali” approach, nor does it mention ColPali at all. It only covers general RAG best practices (chunk size, overlap, hybrid search, evaluation, etc.) and some comments about retrieval quality and long‑context reasoning.\n\nBecause ColPali is not defined or discussed in the supplied PDF or audio transcript excerpts, I can’t reliably explain the difference based on this context alone.",
+    "top_sources": [
+      {
+        "source": "AudioTranscript",
+        "distance": 0.5978,
+        "snippet": "indexation of the code base and much faster than finding the exact places in your code base for coding and helping to you and when we need the long context reasoning it's quite often utilized because "
+      },
+      {
+        "source": "AudioTranscript",
+        "distance": 0.6134,
+        "snippet": ". Monitor the retrieval quality in addition to our like ingestion and our test we should prepare some pipeline that will double check the quality of our retrieval system. I will wait with the domain s"
+      },
+      {
+        "source": "PDF",
+        "distance": 0.6321,
+        "snippet": "--- Page 16 ---\n16\n✅\nChunk size: 512 tokens\n✅\nChunk overlap: 15% (~75 tokens)\n✅\nTop-k retrieval: 3-5 chunks\n✅\nEmbedding dimensions: 768-1536\nDefault Conﬁguration \n(Works for 80% of cases):\n\n--- Page 1"
+      },
+      {
+        "source": "PDF",
+        "distance": 0.6408,
+        "snippet": "--- Page 7 ---\n7\nRAG Pipeline Deep Dive\n\n--- Page 8 ---\n8\nChunking - The Critical Decision\nWhy Chunking Matters\nLLMs have limited context windows (32k-200k \ntokens). Large documents must be divided in"
+      },
+      {
+        "source": "PDF",
+        "distance": 0.6454,
+        "snippet": "--- Page 3 ---\n3\nAgenda\n01\n02\n03\nDeﬁnition & Beneﬁts\nUse cases\nLimitations\n\n--- Page 4 ---\n4\nThe AI Adaptation Landscape\nWhere Does RAG Fit in Your AI Strategy?\n●\nNeed fresh, proprietary knowledge\n●\nD"
+      }
+    ]
+  },
+  {
+    "question": "Why is hybrid search better than vector-only search?",
+    "answer": "Hybrid search is better than vector-only search because combining vector search with keyword (lexical) search improves retrieval quality and reliability:\n\n- Vector search captures semantic similarity (meaning), but can miss exact terms, rare entities, or specific phrasing.\n- Keyword search is strong at exact matches and precise filters, but weak on semantic similarity.\n\nUsing both together (hybrid search) gives better recall and more relevant results than relying on vectors alone, which directly improves RAG answer quality and reduces hallucinations.  \n[Source: PDF, page 17; AudioTranscript on “combination of the keyword and vector search for better meaning of your searches”]",
+    "top_sources": [
+      {
+        "source": "AudioTranscript",
+        "distance": 0.401,
+        "snippet": ". To build like more reliable system not rely solely on the vector search so in addition you still have like your standard searches like keyword and we will discuss about some of the other approaches "
+      },
+      {
+        "source": "PDF",
+        "distance": 0.5015,
+        "snippet": ".\n●\nRetrieval quality: The quality of the vector database and retrieval algorithm determines recall.  Missing relevant \ndocuments leads to hallucinated answers.\n●\nLatency & cost: Large vector database"
+      },
+      {
+        "source": "AudioTranscript",
+        "distance": 0.5155,
+        "snippet": "where it's mainly utilized it's like for the AI chatbots like for example if you have some support chatbots you are putting information as a to the rug like Q&A information or some support documents f"
+      },
+      {
+        "source": "AudioTranscript",
+        "distance": 0.5202,
+        "snippet": ". Some do some don'ts for the RAC system so quite often it's better to start from the simple approach even like from the simple base later on we will go a bit deeper on that. Use the metadata filterin"
+      },
+      {
+        "source": "PDF",
+        "distance": 0.534,
+        "snippet": "--- Page 16 ---\n16\n✅\nChunk size: 512 tokens\n✅\nChunk overlap: 15% (~75 tokens)\n✅\nTop-k retrieval: 3-5 chunks\n✅\nEmbedding dimensions: 768-1536\nDefault Conﬁguration \n(Works for 80% of cases):\n\n--- Page 1"
+      }
+    ]
+  }
+]
